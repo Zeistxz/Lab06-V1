@@ -1,0 +1,15 @@
+create database park; 
+use park;
+ create table usuario( 
+id int auto_increment primary key, 
+usuario varchar(20), 
+clave varchar(20) ); 
+
+insert into usuario (usuario,clave) values ("admin@admin","admin"); 
+
+create table vehiculos( 
+id int auto_increment primary key, 
+marca varchar(20), 
+modelo varchar(20),
+fecha_ingreso date, 
+placa varchar(20) );
